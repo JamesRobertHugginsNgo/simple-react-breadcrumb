@@ -1,0 +1,24 @@
+.simple-breadcrumb {
+	background-color: #cccccc;
+	color: #333333;
+
+	.breadcrumb-item {
+		color: #333333;
+
+		a {
+			color: #2d699e;
+			font-weight: 500;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		& + .breadcrumb-item {
+			&::before {
+				color: #333333;
+			}
+		}
+	}
+}
