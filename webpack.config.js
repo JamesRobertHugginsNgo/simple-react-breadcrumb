@@ -14,7 +14,7 @@ module.exports = (env, { mode }) => {
 			path: path.resolve(__dirname, 'dist'),
 			filename: 'index.js',
 			library: {
-				name: 'SimpleBreadcrumb',
+				name: 'SimpleReactBreadcrumb',
 				type: 'umd'
 			}
 		},

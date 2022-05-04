@@ -6,9 +6,9 @@ import Crumb from './components/Crumb';
 
 import './styles/index.scss';
 
-function SimpleBreadcrumb({ crumbs }) {
+function SimpleReactBreadcrumb({ crumbs }) {
 	return (
-		<nav aria-label="breadcrumb" className='simple-breadcrumb p-3'>
+		<nav aria-label="breadcrumb" className='simple-react-breadcrumb p-3'>
 			<ol className="breadcrumb mb-0">
 				{crumbs.map(({ text, link }, index, array) => (
 					<Crumb
@@ -24,11 +24,11 @@ function SimpleBreadcrumb({ crumbs }) {
 	);
 }
 
-SimpleBreadcrumb.propTypes = {
+SimpleReactBreadcrumb.propTypes = {
 	crumbs: PropTypes.arrayOf(PropTypes.shape({
 		text: PropTypes.string.isRequired,
 		link: PropTypes.string
 	})).isRequired
 };
 
-export default SimpleBreadcrumb;
+export default SimpleReactBreadcrumb;
